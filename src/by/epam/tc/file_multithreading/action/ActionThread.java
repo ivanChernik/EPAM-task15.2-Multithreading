@@ -21,7 +21,7 @@ public class ActionThread extends Thread {
 	private static final String MULTIPLICATION = "Multiplication";
 	private File inputFile;
 	private Scanner scanner;
-	private volatile PrintWriter out;
+	private PrintWriter out;
 
 	private static final Logger log = Logger.getLogger(ActionThread.class);
 

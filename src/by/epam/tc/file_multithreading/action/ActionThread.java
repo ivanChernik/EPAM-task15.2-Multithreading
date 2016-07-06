@@ -36,6 +36,7 @@ public class ActionThread extends Thread {
 			scanner = new Scanner(inputFile);
 		} catch (FileNotFoundException e) {
 			log.error(ERROR_FINDING_INPUT_FILE, e);
+			out.close();
 			throw new RuntimeException(ERROR_FINDING_INPUT_FILE, e);
 		}
 

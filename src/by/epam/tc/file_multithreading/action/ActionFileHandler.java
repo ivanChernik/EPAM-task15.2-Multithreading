@@ -21,6 +21,7 @@ public class ActionFileHandler {
 			out = new PrintWriter(new File(SRC_RESULT_OUT_DAT));
 		} catch (IOException e) {
 			log.error(ERROR_FINDING_RESULT_FILE, e);
+			out.close();
 			throw new RuntimeException(ERROR_FINDING_RESULT_FILE,e);
 		}
 		
